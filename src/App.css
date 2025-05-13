@@ -1,0 +1,308 @@
+.App {
+  text-align: center;
+}
+
+
+
+
+.App-header {
+  background-color: #282c34;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  font-size: calc(10px + 2vmin);
+  color: white;
+}
+
+
+
+
+.buttonBlack {
+  padding: 8px;
+  transition: transform ease-in-out .3s;
+}
+.buttonBlack:active {
+  transform: scale(0.8) rotate(3000deg);
+
+}
+.catBlack {
+  background-color: rgba(0, 0, 0, 0.772);
+  padding: 16px;
+  margin-bottom: 16px;
+  border-radius: 5%;
+}
+
+.catRed {
+  background-color: rgba(240, 17, 17, 0.772);
+  padding: 16px;
+  margin-bottom: 16px;
+  border-radius: 5%;
+}
+
+.catPurple {
+  background-color: rgba(167, 3, 255, 0.772);
+  padding: 16px;
+  margin-bottom: 16px;
+  border-radius: 5%;
+}
+
+.catOrange {
+  background-color: rgba(255, 136, 0, 0.772);
+  padding: 16px;
+  margin-bottom: 16px;
+  border-radius: 5%;
+}
+
+.catBlue {
+  background-color: rgba(39, 64, 254, 0.772);
+  padding: 16px;
+  margin-bottom: 16px;
+  border-radius: 5%;
+}
+
+.catPrison {
+  background-color: rgba(138, 138, 138, 0.772);
+  padding: 16px;
+  margin-bottom: 16px;
+  border-radius: 5%;
+}
+
+.catAss {
+  background-color: rgb(255, 0, 115);
+  padding: 16px;
+  margin-bottom: 16px;
+  border-radius: 5%;
+}
+
+.catTuy {
+  background-color: rgba(0, 255, 30, 0.772);
+  padding: 16px;
+  margin-bottom: 16px;
+  border-radius: 5%;
+}
+
+.catDes {
+  background-color: rgba(255, 251, 0, 0.897);
+  padding: 16px;
+  margin-bottom: 16px;
+  border-radius: 5%;
+}
+
+
+  .boxContainer {
+    width: 300px;
+    height: 150px;
+    overflow: auto;
+
+  }
+
+  ul {
+    padding: 0;
+    margin: 0;
+  }
+
+  li {
+    max-width: 100%;
+    word-wrap: break-word;
+  }
+
+  .cardResult {
+    opacity: 0;
+    transform: translateY(10px);
+    animation: fadeInUp 0.4s ease forwards;
+  }
+  
+  @keyframes fadeInUp {
+    to {
+      opacity: 1;
+      transform: translateY(0);
+    }
+  }
+  
+
+  .resetButton {
+    background-color: #ffc107;
+    color: #000;
+    border: none;
+    padding: 12px 24px;
+    font-size: 1.1rem;
+    font-weight: bold;
+    border-radius: 8px;
+    cursor: pointer;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3);
+    transition: background-color 0.3s ease, transform 0.2s ease;
+  }
+  
+  .resetButton:hover {
+    background-color: #ffca2c;
+    transform: scale(1.05);
+  }
+  
+  .resetButton:active {
+    background-color: #e6ac00;
+    transform: scale(0.95);
+  }
+  
+  .catDes {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding: 2rem;
+    border-radius: 5%;
+  }
+  
+  @keyframes diceRoll {
+    0% {
+      transform: rotate(0deg) scale(1);
+    }
+    25% {
+      transform: rotate(360deg) scale(1.1);
+    }
+    50% {
+      transform: rotate(720deg) scale(0.95);
+    }
+    75% {
+      transform: rotate(1080deg) scale(1.05);
+    }
+    100% {
+      transform: rotate(1440deg) scale(1);
+    }
+  }
+  
+  .buttonBlack {
+    width: min(20vw, 120px);   /* S'adapte à l'écran mais ne dépasse pas 120px */
+    height: min(20vw, 120px);
+    max-width: 120px;
+    max-height: 120px;
+    min-width: 60px;
+    min-height: 60px;
+    transition: transform 0.3s ease;
+    cursor: pointer;
+  }
+  
+  .buttonBlack.animate {
+    animation: diceRoll 1s ease-in-out;
+  }
+  
+
+  /* Animation pour le bouton du dé */
+@keyframes rollAnimation {
+  0% {
+    transform: rotate(0deg);
+  }
+  25% {
+    transform: rotate(90deg);
+  }
+  50% {
+    transform: rotate(180deg);
+  }
+  75% {
+    transform: rotate(270deg);
+  }
+  100% {
+    transform: rotate(360deg);
+  }
+}
+
+.catBlack, .catRed, .catPurple, .catBlue, .catPrison, .catAss, .catTuy {
+  padding: 20px;
+  border-radius: 10px;
+  margin-bottom: 20px;
+  box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.3);
+}
+
+body {
+  font-size: clamp(14px, 2vw, 18px); /* Minimum 14px, maximum 18px, selon la taille de l’écran */
+}
+
+h4 {
+  font-size: clamp(16px, 2.5vw, 24px);
+  margin-bottom: 0.5rem;
+}
+
+.boxContainer {
+  width: 90%;
+  max-width: 400px;
+  height: auto;
+  max-height: 150px;
+  overflow-y: auto;
+  margin: 0 auto;
+}
+
+li {
+  max-width: 100%;
+  word-wrap: break-word;
+  font-size: clamp(16px, 3vw, 24px);
+  line-height: 1.5;
+  padding: 0.5rem;
+}
+
+@media (max-width: 480px) {
+  .resetButton {
+    padding: 10px 20px;
+    font-size: 1rem;
+  }
+
+  .boxContainer {
+    max-height: 200px;
+  }
+}
+
+.catContainer {
+  padding: 0 5vw; /* marges latérales fluides (5% de l’écran) */
+}
+
+.soundToggle {
+  margin-top: 1rem;
+  display: flex;
+  justify-content: center;
+}
+
+/* Footer */
+.footer {
+  text-align: center;
+  padding: 16px;
+  background-color: #1f1f1f;
+  color: white;
+  font-size: 0.9rem;
+  margin-top: 2rem;
+  border-top: 2px solid #444;
+  position: relative;
+  bottom: 0;
+  width: 100%;
+  height: 4rem;
+  font-weight: 600;
+  display: block;
+  margin-left: 0;
+  margin-right: 0;
+  box-sizing: border-box; /* Assurez-vous que le padding ne provoque pas de décalage */
+}
+
+/* Ajoutez ces styles pour le body */
+body {
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  margin: 0;  /* Supprimez les marges par défaut */
+  padding: 0; /* Supprimez le padding par défaut */
+}
+
+/* Contenu principal */
+.catContainer {
+  flex: 1;
+  padding: 0 5vw; /* marges latérales fluides */
+  box-sizing: border-box;
+}
+
+/* S'assurer que le footer est collé en bas et a bien la même largeur */
+.footer {
+  width: 100%;
+  padding: 0;
+  margin-left: 0;
+  margin-right: 0;
+  box-sizing: border-box;
+}
+
