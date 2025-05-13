@@ -1,0 +1,16 @@
+{
+  "files": {
+    "main.css": "/jdb/static/css/main.13715bb1.css",
+    "main.js": "/jdb/static/js/main.34c2f84c.js",
+    "static/js/453.d895b8b4.chunk.js": "/jdb/static/js/453.d895b8b4.chunk.js",
+    "static/media/629982__flem0527__dice-rolling-on-table.wav": "/jdb/static/media/629982__flem0527__dice-rolling-on-table.2f3d8868cde47d9838f3.wav",
+    "index.html": "/jdb/index.html",
+    "main.13715bb1.css.map": "/jdb/static/css/main.13715bb1.css.map",
+    "main.34c2f84c.js.map": "/jdb/static/js/main.34c2f84c.js.map",
+    "453.d895b8b4.chunk.js.map": "/jdb/static/js/453.d895b8b4.chunk.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.13715bb1.css",
+    "static/js/main.34c2f84c.js"
+  ]
+}
