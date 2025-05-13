@@ -34,6 +34,14 @@
   border-radius: 5%;
 }
 
+.catPerdu {
+  background-color: rgba(255, 255, 255, 0.772);
+  color: #ffffff;
+  padding: 16px;
+  margin-bottom: 16px;
+  border-radius: 5%;
+}
+
 .catRed {
   background-color: rgba(240, 17, 17, 0.772);
   padding: 16px;
