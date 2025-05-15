@@ -1,4 +1,4 @@
-# lien du projet en ligne
+# lien du site déployé
 
 
 https://florentdesmarets.github.io/jdb/
